@@ -5,23 +5,23 @@
  * @size: provided input
 */
 
-
 void print_square(int size)
 {
 	int r, c;
 
-if (size <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
-	else {
-	for (r = 0; r < size; r++)
+	else
 	{
-		for (c = 0; c < size; c++)
+		for (r = 0; r < size; r++)
 		{
-			_putchar('#');
+			for (c = 0; c < size; c++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
-	}
 	}
 }
