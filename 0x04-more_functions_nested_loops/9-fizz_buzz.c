@@ -9,9 +9,10 @@
 int main(void)
 {
     int i;
+
     for (i = 1; i <= 100; i++)
     {
-        if (i % 3 == 0 && i % 5 == 0) //if number is multiple of both 3 and 5 print FizzBuzz.
+        if (i % 3 == 0 && i % 5 == 0)
         {
             printf("FizzBuzz");
         }
@@ -32,6 +33,7 @@ int main(void)
         {
             printf(" ");
         }
-    }    
+    } 
+    printf("\n");   
     return 0;
 }
