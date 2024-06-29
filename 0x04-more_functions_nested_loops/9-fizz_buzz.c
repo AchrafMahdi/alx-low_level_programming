@@ -1,11 +1,11 @@
 #include <stdio.h>
-
 /**
- * main - prints num or fizz or buzz or fizzBuzz :)
+ * main - entry point
+ *
+ * Description: prints FizzBuzz
  *
  * Return: 0
  */
-
 int main(void)
 {
     int i;
