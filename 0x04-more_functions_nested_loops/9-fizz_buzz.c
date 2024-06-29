@@ -2,6 +2,7 @@
 
 /**
  * main - prints num or fizz or buzz or fizzBuzz :)
+ *
  * Return: 0
 */
 
@@ -14,20 +15,20 @@ int main(void)
         {
             printf("FizzBuzz");
         }
-        else if (i % 3 == 0) //if number is multiple of 3 and 5 print Fizz.
+        else if (i % 3 == 0)
         {
             printf("Fizz");
         }
-        else if (i % 5 == 0) //if number is multiple of 5 print Buzz.
+        else if (i % 5 == 0)
         {
             printf("Buzz");
         }
         else
         {
-            printf("%d", i); //if number is not multiple of 3 or 5 print number.
+            printf("%d", i);
         }
         
-        if (i < 100) //if number is less than 100 print " " for space.
+        if (i < 100)
         {
             printf(" ");
         }
