@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * print_rev -  function that prints a string, in reverse, followed by a new line.
- * @s: pointer to a string 
+ * print_rev - function that prints a string in reverse followed by a new line.
+ * @s: pointer to a string
  */
 void print_rev(char *s)
 {
