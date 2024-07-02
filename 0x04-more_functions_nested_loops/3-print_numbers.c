@@ -1,12 +1,11 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_numbers - prints the numbers, from 0 to 9
- * Return: 0 or 1
-*/
+ * _puts - that prints a string, followed by a new line. 
+ * @str: pointer to a string
+ */
 
-
-void print_numbers(void)
+void _puts(char *str)
 {
 	int num = 0;
 
