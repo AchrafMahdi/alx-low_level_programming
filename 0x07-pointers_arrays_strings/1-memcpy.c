@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * _memset - function that fills memory with a constant byte.
- * Return: pointer to the memory area s
+ * _memcpy - function that copies memory area.
+ * Return: pointer to dest.
  * @src: memory area.
  * @dest: memory area.
  * @n: number of times.
