@@ -18,9 +18,9 @@ while (accept[j] != '\0')
 {
 if (s[i] == accept[j])
 {
-j++;
 count++;
 }
+j++;
 }
 i++;
 j = 0;
