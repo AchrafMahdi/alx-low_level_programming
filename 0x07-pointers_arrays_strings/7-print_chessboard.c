@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *print_chessboard - function that prints the chessboard.
+ * print_chessboard - function that prints the chessboard.
  *@a: char
- *
+ * Return: void
  */
 void print_chessboard(char (*a)[8])
 {
