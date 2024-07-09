@@ -15,9 +15,7 @@ while (*s)
 while (accept[j] != '\0')
 {
 if (*s == accept[j])
-{
 return (s);
-}
 j++;
 }
 j = 0;
