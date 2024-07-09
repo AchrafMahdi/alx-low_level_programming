@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * print_chessboard - function that prints the chessboard.
- *@a: char
- * Return: void
- */
+* print_chessboard - print chessboard given set 2D array
+* @a: 2D array
+*/
 void print_chessboard(char (*a)[8])
 {
 unsigned int i;
@@ -16,5 +15,4 @@ printf("%c",a[i][j]);
 }
 printf("\n");
 }
-printf("\n");
 }
