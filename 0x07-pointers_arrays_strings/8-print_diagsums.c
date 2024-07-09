@@ -11,8 +11,8 @@ int s2 = 0;
 unsigned int i;
 for (i = 0; i < size; i++)
 {
-s1 += a[(i * size) + i];
-s2 += a[(i * size) + (size - i - 1)];
+s1 += a[i * size + i];
+s2 += a[i * size + (size - i - 1)];
 }
-printf("%d, %d\n", s1, s2);
+printf("%i, %i\n", s1, s2);
 }
