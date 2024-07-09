@@ -5,12 +5,12 @@
  */
 void print_chessboard(char (*a)[8])
 {
-unsigned int i = 0;
-unsigned int j = 0;
+unsigned int i;
+unsigned int j;
 
-for (;i < 8; i++)
+for (i = 0; i < 8; i++)
 {
-for (;j < 8; j++)
+for (j = 0; j < 8; j++)
 {
 printf("%c",a[i][j]);
 }
