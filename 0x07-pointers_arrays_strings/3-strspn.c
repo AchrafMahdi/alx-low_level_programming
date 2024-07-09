@@ -13,14 +13,18 @@ unsigned int count = 0;
 int j = 0;
 int i = 0;
 
-while (s[i] != ' ' && s[i] != '\0')
+while (s[i] != '\0' && s[i] != ' ')
 {
 while (accept[j] != '\0')
 {
+
 if (s[i] == accept[j])
-count++;
+{
 j++;
+count++;
 }
+}
+
 i++;
 j = 0;
 }
