@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * _strchr - function that locates a character in a string.
- * Return: pointer to the first occurrence of the character c in s, or NULL
- * @s: string. 
- * @c: character.
+ * _strchr - function that locates a character in a string
+ *@s: first value -char
+ *@c: second value - char
+ *
+ * Return: char with result
  */
 char *_strchr(char *s, char c)
 {
