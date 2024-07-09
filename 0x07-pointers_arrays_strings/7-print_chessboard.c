@@ -12,8 +12,8 @@ for (;i < 8; i++)
 {
 for (;j < 8; j++)
 {
-putchar(a[i][j]);
+printf(a[i][j]);
 }
-putchar('\n');
+printf('\n');
 }
 }
