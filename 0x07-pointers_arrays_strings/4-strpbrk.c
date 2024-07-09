@@ -23,5 +23,5 @@ j++;
 j = 0;
 s++;
 }
-return ('\0');
+return (NULL);
 }
