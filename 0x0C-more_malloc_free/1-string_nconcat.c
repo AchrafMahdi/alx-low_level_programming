@@ -39,9 +39,9 @@ for (i = i; s1[i] != '\0'; i++)
 combined[i] = s1[i];
 }
 }
-if (s2 != NULL && n >= strlen(s2))
+if (s2 != NULL)
 {
-for (j = 0; s2[j] != '\0'; j++)
+for (j = 0; s2[j] != '\0' && n >= strlen(s2); j++)
 {
 combined[j + i] = s2[j];
 }
