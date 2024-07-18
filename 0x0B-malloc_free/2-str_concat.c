@@ -23,6 +23,11 @@ if (s1 != NULL && s2 == NULL)
 {
 combined = malloc(strlen(s1) + 1);
 }
+if (s1 == NULL && s2 == NULL)
+{
+combined = malloc(1);
+combined[0] = "";
+}
 if (s1 != NULL)
 {
 for (i = i; s1[i] != '\0'; i++)
