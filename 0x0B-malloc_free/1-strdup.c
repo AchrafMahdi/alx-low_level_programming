@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 /**
  * _strdup - function that returns a pointer to a new space in memory.
  * Return:  pointer to a new string which is a duplicate of the string str
