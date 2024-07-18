@@ -16,7 +16,7 @@ if (array == NULL){
 }
 for (unsigned int i = 0; i < size; i++)
 {
-    array[i] = 'c';
+    array[i] = c;
 }
 return (array);
 }
