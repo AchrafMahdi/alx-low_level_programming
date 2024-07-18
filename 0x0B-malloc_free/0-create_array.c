@@ -11,11 +11,11 @@ char *array = malloc(size * sizeof(char));
 unsigned int i;
 if (size == 0)
 {
-return NULL;
+return (NULL);
 }
 if (array == NULL)
 {
-return NULL;
+return (NULL);
 }
 for (i = 0; i < size; i++)
 {
