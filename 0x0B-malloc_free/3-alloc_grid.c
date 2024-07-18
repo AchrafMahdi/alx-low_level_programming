@@ -24,8 +24,9 @@ for (i = 0; i < height; i++)
 {
 for (j = 0; j < width; j++)
 {
-grid[i] = malloc(width * sizeof(int));
-*grid[i][j] = 0;
+grid[i][j] = malloc(width * sizeof(int));
+grid[i][j] = 0;
 }
 }
+return (grid);
 }
