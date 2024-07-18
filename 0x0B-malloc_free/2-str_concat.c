@@ -7,22 +7,24 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-unsigned int i;
+unsigned int i = 0;
 unsigned int length = 0;
 char *combined = NULL;
-if (s1 == NULL || s2 == NULL)
+if (s1 != NULL)
 {
-    return (NULL);
-}
-for (i = 0; s1[i] != '\0'; i++)
+for (i = i; s1[i] != '\0'; i++)
 {
 combined[i] = s1[i];
 length += 1;
 }
+}
+if (s2 != NULL)
+{
 for (i = i; s2[i] != '\0'; i++)
 {
 combined[i] = s2[i];
 length += 1;
+}
 }
 combined = malloc(length + 1);
 if (combined == NULL)
