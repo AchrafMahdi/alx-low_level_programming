@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 /**
  * str_concat - function that concatenates two strings.
  * Return:  pointer or NULL.
@@ -11,15 +12,7 @@ unsigned int i;
 unsigned int j;
 unsigned int length = 0;
 char *combined = NULL;
-for (i = 0; s1[i] != '\0'; i++)
-{
-length += 1;
-}
-for (i = 0; s2[i] != '\0'; i++)
-{
-length += 1;
-}
-combined = malloc(length + 1);
+combined = malloc(strlen(s1) + strlen(s2) + 1);
 if (s1 != NULL)
 {
 for (i = 0; s1[i] != '\0'; i++)
