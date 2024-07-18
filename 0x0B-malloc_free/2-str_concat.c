@@ -8,13 +8,13 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-unsigned int i;
+unsigned int i = 0;
 unsigned int j;
 char *combined = NULL;
 combined = malloc(strlen(s1) + strlen(s2) + 1);
 if (s1 != NULL)
 {
-for (i = 0; s1[i] != '\0'; i++)
+for (i = i; s1[i] != '\0'; i++)
 {
 combined[i] = s1[i];
 }
