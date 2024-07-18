@@ -14,12 +14,12 @@ if (s1 == NULL || s2 == NULL)
 {
     return (NULL);
 }
-for (i = 0; s1[i] != '\0')
+for (i = 0; s1[i] != '\0'; i++)
 {
 combined[i] = s1[i];
 length += 1;
 }
-for (i = i; s2[i] != '\0')
+for (i = i; s2[i] != '\0'; i++)
 {
 combined[i] = s2[i];
 length += 1;
