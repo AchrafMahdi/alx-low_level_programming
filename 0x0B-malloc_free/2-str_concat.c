@@ -27,6 +27,10 @@ if (s1 == NULL && s2 == NULL)
 {
 combined = malloc(1);
 }
+if (combined == NULL)
+{
+return (NULL);
+}
 if (s1 != NULL)
 {
 for (i = i; s1[i] != '\0'; i++)
@@ -40,10 +44,6 @@ for (j = 0; s2[j] != '\0'; j++)
 {
 combined[j + i] = s2[j];
 }
-}
-if (combined == NULL)
-{
-return (NULL);
 }
 return (combined);
 }
