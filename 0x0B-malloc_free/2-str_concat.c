@@ -23,7 +23,7 @@ if (s2 != NULL)
 {
 for (j = 0; s2[j] != '\0'; j++)
 {
-combined[j + i] = s2[i];
+combined[j + i] = s2[j];
 }
 }
 if (combined == NULL)
