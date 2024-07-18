@@ -12,6 +12,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 unsigned int i = 0;
 unsigned int j;
 char *combined = "";
+char check = "";
 if (n >= strlen(s2))
 {
 n = strlen(s2);
@@ -45,8 +46,9 @@ combined[i] = s1[i];
 }
 if (s2 != NULL)
 {
-for (j = 0; s2[j] != '\0' && n >= strlen(s2); j++)
+for (j = 0; s2[j] != '\0' && n >= strlen(check); j++)
 {
+check[j] = s2[j];
 combined[j + i] = s2[j];
 }
 }
