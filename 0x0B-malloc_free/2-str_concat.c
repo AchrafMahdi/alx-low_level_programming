@@ -10,7 +10,6 @@ char *str_concat(char *s1, char *s2)
 {
 unsigned int i;
 unsigned int j;
-unsigned int length = 0;
 char *combined = NULL;
 combined = malloc(strlen(s1) + strlen(s2) + 1);
 if (s1 != NULL)
