@@ -8,9 +8,14 @@
  */
 int **alloc_grid(int width, int height)
 {
-int *grid[height][width] = {NULL};
+int **grid;
 unsigned int i;
 unsigned int j;
+grid = malloc(height * sizeof(int *));
+if (grid == NULL)
+{
+return (NULL);
+}
 if (width == 0 || height == 0 || width < 0 || height < 0)
 {
 return (NULL);
@@ -19,12 +24,8 @@ for (i = 0; i < height; i++)
 {
 for (j = 0; j < width; j++)
 {
-grid[i][j] = malloc(sizeof(int));
+grid[i] = malloc(width * sizeof(int));
 *grid[i][j] = 0;
 }
-}
-if (grid == NULL)
-{
-return (NULL);
 }
 }
