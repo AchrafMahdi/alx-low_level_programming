@@ -12,6 +12,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 unsigned int i = 0;
 unsigned int j;
 char *combined = "";
+if (n >= strlen(s2))
+{
+n = strlen(s2);
+}
 if (s1 != NULL && s2 != NULL)
 {
 combined = malloc(strlen(s1) + n + 1);
