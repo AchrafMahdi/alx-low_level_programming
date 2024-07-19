@@ -45,7 +45,7 @@ combined[i] = s1[i];
 }
 if (s2 != NULL)
 {
-for (j = 0; j < n; j++)
+for (j = 0; s2[j] != '\0'; j++)
 {
 combined[j + i] = s2[j];
 }
