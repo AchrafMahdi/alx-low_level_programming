@@ -12,7 +12,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 unsigned int i = 0;
 unsigned int j;
 char *combined = "";
-if (n >= strlen(s2))
+if (n > strlen(s2))
 {
 n = strlen(s2);
 }
@@ -45,7 +45,7 @@ combined[i] = s1[i];
 }
 if (s2 != NULL)
 {
-for (j = 0; s2[j] != '\0'; j++)
+for (j = 0; j < n; j++)
 {
 combined[j + i] = s2[j];
 }
