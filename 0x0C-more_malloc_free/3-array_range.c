@@ -1,9 +1,9 @@
 #include <stdlib.h>
 /**
  * array_range - function that creates an array of integers.
- * Return: pointer or null.
- * @min: minimum.
- * @max: maximum.
+ * Return:  pointer or NULL.
+ * @min: min.
+ * @max: max.
  */
 int *array_range(int min, int max)
 {
