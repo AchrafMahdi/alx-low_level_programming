@@ -19,12 +19,9 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < nmemb; i++)
+for (i = 0; i < (nmemb * size); i++)
 {
-for (j = 0; j < size; j++)
-{
-ptr[i * size + j] = 0;
-}
+ptr[i] = 0;
 }
 return (ptr);
 }
