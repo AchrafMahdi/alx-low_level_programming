@@ -1,10 +1,10 @@
 #include <stdlib.h>
 /**
- * array_range - function that creates an array of integers.
- * Return: Pointer or NULL.
- * @min: minimum.
- * @max: maximum.
- */
+* array_range - function that creates an array of integers.
+* Return: Pointer or NULL.
+* @min: minimum.
+* @max: maximum.
+*/
 int *array_range(int min, int max)
 {
 int *arra;
