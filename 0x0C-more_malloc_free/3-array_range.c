@@ -12,17 +12,17 @@ int *arr;
 int size;
 if (min > max)
 {
-return (NULL);
+return NULL;
 }
 size = max - min + 1;
 arr = malloc(size * sizeof(int));
 if (arr == NULL)
 {
-return (NULL);
+return NULL;
 }
 for (i = 0; i < size; i++)
 {
 arr[i] = min + i;
 }
-return (arr);
+return arr;
 }
