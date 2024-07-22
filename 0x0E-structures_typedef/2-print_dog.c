@@ -1,9 +1,12 @@
-#include <stdio.h>
 #include "dog.h"
+#include <stdio.h>
+
 /**
- * print_dog - function that prints a struct dog.
- * @d: struct dog.
- * Return: nothing.
+ * print_dog - Prints a struct dog
+ *
+ * @d: pointer to d dog
+ *
+ * Return: nothing
  */
 void print_dog(struct dog *d)
 {
