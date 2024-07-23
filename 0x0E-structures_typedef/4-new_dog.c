@@ -4,7 +4,7 @@
 /**
  * _strlen - Calculate the length of a string.
  * @s: string.
- * Return: length of string
+ * Return: length of string.
  */
 int _strlen(char *s)
 {
@@ -20,8 +20,8 @@ return (length);
 
 /**
  * _strcpy - copy a string.
- * @dest: destination buffer
- * @src: source string
+ * @dest: destination buffer.
+ * @src: source string.
  * Return: Pointer.
  */
 char *_strcpy(char *dest, char *src)
