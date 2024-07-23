@@ -3,7 +3,7 @@
 /**
  * free_dog - function that frees dogs.
  *
- * Return: void
+ * Return: nothing.
  *
  * @d: struct
  */
