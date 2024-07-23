@@ -12,7 +12,7 @@ int length = 0;
 
 while (s[length] != '\0')
 {
-length++;
+length += 1;
 }
 
 return (length);
@@ -31,7 +31,7 @@ int i = 0;
 while (src[i] != '\0')
 {
 dest[i] = src[i];
-i++;
+i += 1;
 }
 dest[i] = '\0';
 
