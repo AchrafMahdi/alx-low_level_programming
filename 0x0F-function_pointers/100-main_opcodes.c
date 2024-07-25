@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * main - main function.
- * Return: 0.
+ * Return: 0 on success.
  * 
  * @argc: arg counter.
  * @argv: array of args.
