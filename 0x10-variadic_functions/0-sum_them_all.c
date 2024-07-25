@@ -4,6 +4,7 @@
  * sum_them_all - unction that returns the sum of all its parameters.
  * Return:  sum or 0.
  * @n: number of arguments.
+ * @...: arguments.
  */
 int sum_them_all(const unsigned int n, ...)
 {
