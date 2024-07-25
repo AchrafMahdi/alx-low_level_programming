@@ -5,7 +5,7 @@
 /**
  * main - main function.
  *
- * Return:  0.
+ * Return: 0.
  *
  * @argc: number of arg.
  * @argv: array of arg.
