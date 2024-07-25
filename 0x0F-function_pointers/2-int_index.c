@@ -24,7 +24,7 @@ for (i = 0; i < size; i++)
 res = cmp(array[i]);
 if (res != 0)
 {
-return i;
+return (i);
 }
 }
 }
