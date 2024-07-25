@@ -19,7 +19,7 @@ printf("%c%d",separator,va_arg(args,const unsigned int));
 }
 else
 {
-printf("%d",separator,va_arg(args,const unsigned int));
+printf("%d",va_arg(args,const unsigned int));
 }
 }
 printf("\n");
