@@ -13,12 +13,18 @@
 
 int main(int argc, char *argv[])
 {
-char operation;
-char res;
 int (*action)(int, int);
-operation = *(argv[2]);
-action = get_op_func(&operation);
-res = action(atoi(argv[1]),atoi(argv[3]));
-printf("%d\n",res);
+if (argc != 4)
+{
+printf("Error\n");
+exit(98);
+}
+action = get_op_func(argv[2]);
+if (!action)
+{
+printf("Error\n");
+exit(99);
+}
+printf("%d\n",action(atoi(argv[1]),atoi(argv[3])));
 return (0);
 }
