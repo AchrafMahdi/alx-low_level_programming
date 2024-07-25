@@ -1,10 +1,10 @@
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * sum_them_all - unction that returns the sum of all its parameters.
- * Return:  sum or 0.
- * @n: number of arguments.
- * @...: arguments.
+ * sum_them_all - Entry Point.
+ * Return: sum or 0.
+ * @n: variadic inputs.
  */
 int sum_them_all(const unsigned int n, ...)
 {
