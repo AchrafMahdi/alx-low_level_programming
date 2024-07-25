@@ -5,9 +5,7 @@
  *
  * Return: nothing.
  *
- * @array: the array that the function will run on each of its elements.
- * @size: the size of the array.
- * @cmp: the function.
+ * @s: operation. 
  */
 
 int (*get_op_func(char *s))(int, int)
