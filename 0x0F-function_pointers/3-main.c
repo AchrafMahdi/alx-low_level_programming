@@ -14,6 +14,7 @@
 int main(int argc, char *argv[])
 {
 int (*action)(int, int);
+int n1, n2;
 if (argc != 4)
 {
 printf("Error\n");
@@ -25,11 +26,13 @@ if (!action)
 printf("Error\n");
 exit(99);
 }
-if (!atoi(argv[3]) && (argv[2][0] == '%' || argv[2][0] == '/'))
+n1 = atoi(argv[1]);
+n2 = atoi(argv[3]);
+if (!n2 && (argv[2][0] == '%' || argv[2][0] == '/'))
 {
 printf("Error\n");
 exit(100);
 }
-printf("%d\n",action(atoi(argv[1]),atoi(argv[3])));
+printf("%d\n",action(n1,n2));
 return (0);
 }
