@@ -1,31 +1,36 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
 /**
- * main - the main function.
- * @argc: the number args.
- * @argv: the array of args.
- *  
- * Return: 0 on success.
- */
+ * main- Main function
+ *@argc: num of args.
+ *@argv: array of args.
+* Description: this program prints opcodes
+* Return: 0 in success
+*/
+int main(int argc, char *argv[])
+{
+	int i, n;
 
-int main(int argc, char **argv)
-{
-char *ptr = (char*)main;
-int i;
-if (argc != 2)
-{
-printf("Error\n");
-exit(1);
-}
-i = atoi(argv[1]);
-if (i < 0)
-{
-printf("Error\n");
-exit(2);
-}
-while (i--)
-{
-printf("%02hhx%s", *ptr++, i ? " " : "\n");
-}
-return (0);
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	n = atoi(argv[1]);
+	if (n < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%02hhx", *((char *)main + i));
+		if (i < n - 1)
+			printf(" ");
+		else
+			printf("\n");
+	}
+	return (0);
 }
