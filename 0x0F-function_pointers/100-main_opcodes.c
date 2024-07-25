@@ -2,11 +2,10 @@
 #include <stdio.h>
 /**
  * main - the main function.
- *
- * Return: 0 on success.
- *
  * @argc: the number args.
- * @argv: the array of args. 
+ * @argv: the array of args.
+ *  
+ * Return: 0 on success.
  */
 
 int main(int argc, char **argv)
