@@ -14,14 +14,12 @@ char *ptr = (char*)main;
 int i;
 if (argc != 2)
 {
-printf("Error\n");
-exit(1);
+printf("Error\n"), exit(1);
 }
 i = atoi(argv[1]);
 if (i < 0)
 {
-printf("Error\n");
-exit(2);
+printf("Error\n"), exit(2);
 }
 while (i--)
 {
