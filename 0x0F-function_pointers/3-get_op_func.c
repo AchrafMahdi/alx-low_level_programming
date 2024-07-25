@@ -2,7 +2,6 @@
 #include "3-calc.h"
 /**
  * get_op_func - function that searches for an integer.
- *
  * Return: the index.
  *
  * @s: operation. 
