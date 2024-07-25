@@ -15,13 +15,10 @@ va_start(args, n);
 
 for (i = 0; i < n; i++)
 {
+printf("%d", va_arg(args,const unsigned int));
 if (separator != NULL)
 {
-printf("%c%d",separator,va_arg(args,const unsigned int));
-}
-else
-{
-printf("%d",va_arg(args,const unsigned int));
+printf("%s",separator);
 }
 }
 
