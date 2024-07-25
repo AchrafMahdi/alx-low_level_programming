@@ -2,7 +2,7 @@
 /**
  * op_add - function that calculate sum of 2 numbers.
  *
- * Return: sum of a and b.
+ * Return:  sum of a and b.
  *
  * @a: integer 1.
  * @b: integer 2.
@@ -16,7 +16,7 @@ return (a + b);
 /**
  * op_sub - function that calculate diff of 2 numbers.
  *
- * Return: difference of a and b.
+ * Return:  difference of a and b.
  *
  * @a: integer 1.
  * @b: integer 2.
@@ -30,7 +30,7 @@ return (a - b);
 /**
  * op_mul - function that calculate product of 2 numbers.
  *
- * Return: product of a and b.
+ * Return:  product of a and b.
  *
  * @a: integer 1.
  * @b: integer 2.
@@ -44,7 +44,7 @@ return (a * b);
 /**
  * op_div - function that calculate division of 2 numbers.
  *
- * Return: division of a and b.
+ * Return:  division of a and b.
  *
  * @a: integer 1.
  * @b: integer 2.
@@ -58,7 +58,7 @@ return (a / b);
 /**
  * op_mod - function that calculate remainder of 2 numbers.
  *
- * Return: remainder of a and b.
+ * Return:  remainder of a and b.
  *
  * @a: integer 1.
  * @b: integer 2.
