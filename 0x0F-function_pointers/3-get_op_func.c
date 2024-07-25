@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "3-calc.h"
 /**
- * int_index - function that searches for an integer.
+ * get_op_func - function that searches for an integer.
  *
  * Return: nothing.
  *
