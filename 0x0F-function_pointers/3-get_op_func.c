@@ -20,9 +20,9 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-int i;
+int i = 0;
 
-for (i = 0; i < 5; i++)
+while (i < 5)
 {
 if (s != NULL && ops[i].op == s && ops[i].f != NULL)
 {
