@@ -36,7 +36,8 @@ break;
 printf("(nil)");
 break;
 default:
-break;
+i++;
+continue;
 }
 
 if (format[i] != NULL && format[i + 1] != NULL)
