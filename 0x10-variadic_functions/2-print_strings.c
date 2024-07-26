@@ -15,7 +15,14 @@ va_start(args, n);
 
 for (i = 0; i < n; i++)
 {
-printf("%s", va_arg(args, char *) ? va_arg(args, char *) : "(nil)");
+if (va_arg(args, char *) != NULL)
+{
+printf("%s", va_arg(args, char *));
+}
+else
+{
+printf("(nil)");
+}
 if (separator != NULL && i < n - 1)
 {
 printf("%s", separator);
