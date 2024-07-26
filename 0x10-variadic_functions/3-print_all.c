@@ -18,7 +18,7 @@ va_start(args, format);
 while (format && format[i])
 {
 currently_at = format[i];
-switch (currently_at)
+switch (format[i])
 {
 case 'c':
 printf("%c", va_arg(args, int));
