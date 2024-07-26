@@ -1,20 +1,19 @@
 #include <stdio.h>
 #include <stdarg.h>
-
 /**
  * print_all - function that prints anything.
- * @format: format string.
  * Return: nothing.
+ * @format: format string.
  */
 void print_all(const char * const format, ...)
 {
 va_list args;
-int i = 0;
 char *str;
+int i;
+i = 0;
 
 va_start(args, format);
-
-while (format[i])
+while (format && format[i])
 {
 
 switch (format[i])
