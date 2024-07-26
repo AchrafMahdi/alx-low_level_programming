@@ -11,6 +11,7 @@ va_list args;
 char *str;
 int i = 0;
 
+va_start(args, format);
 while (format[i])
 {
 str = va_arg(args, char *);
@@ -46,5 +47,6 @@ printf(", ");
 i++;
 }
 
+va_end(args);
 printf("\n");
 }
