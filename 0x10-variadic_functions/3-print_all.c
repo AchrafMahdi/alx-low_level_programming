@@ -1,21 +1,24 @@
 #include <stdio.h>
 #include <stdarg.h>
+
 /**
  * print_all - function that prints anything.
+ * @format: format string.
  * Return: nothing.
- * @format: format.
  */
 void print_all(const char * const format, ...)
 {
 va_list args;
 int i = 0;
 char *str;
+char currently_at;
+
 va_start(args, format);
-while (format[i])
+
+while (format && format[i])
 {
-
-
-switch (format[i])
+currently_at = format[i];
+switch (currently_at)
 {
 case 'c':
 printf("%c", va_arg(args, int));
