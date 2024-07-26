@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_numbers - function that prints strings, followed by a new line.
+ * print_strings - function that prints strings, followed by a new line.
  * Return: nothing.
- * 
  * @n: variadic inputs.
  * @separator: separator.
  */
