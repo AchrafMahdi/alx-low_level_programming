@@ -11,13 +11,13 @@ void print_all(const char * const format, ...)
 va_list args;
 int i = 0;
 char *str;
-char currently_at;
+
 
 va_start(args, format);
 
 while (format && format[i])
 {
-currently_at = format[i];
+
 switch (format[i])
 {
 case 'c':
