@@ -3,7 +3,7 @@
 /**
  * print_all - function that prints anything.
  * Return: nothing.
- * @format: format. 
+ * @format: format.
  */
 void print_all(const char * const format, ...)
 {
