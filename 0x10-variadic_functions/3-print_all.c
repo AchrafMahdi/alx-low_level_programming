@@ -9,8 +9,7 @@ void print_all(const char * const format, ...)
 {
 va_list args;
 char *str;
-int i;
-i = 0;
+int i = 0;
 
 while (format[i])
 {
