@@ -40,7 +40,7 @@ i++;
 continue;
 }
 
-if (format[i] != NULL && format[i + 1] != NULL)
+if (format[i + 1] != '\0')
 {
 printf(", ");
 }
