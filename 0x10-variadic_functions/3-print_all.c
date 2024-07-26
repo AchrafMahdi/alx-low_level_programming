@@ -12,10 +12,9 @@ va_list args;
 int i = 0;
 char *str;
 
-
 va_start(args, format);
 
-while (format && format[i])
+while (format[i])
 {
 
 switch (format[i])
