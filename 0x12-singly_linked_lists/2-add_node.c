@@ -20,7 +20,7 @@ new->str = strdup(str);
 if (new->str == NULL)
 {
 free(new);
-return(NULL);
+return (NULL);
 }
 new->len = _strlen(str);
 new->next = *head;
