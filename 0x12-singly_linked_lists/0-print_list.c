@@ -11,7 +11,6 @@ list_t a;
 int num = 0;
 if (h == NULL)
 {
-printf("[0] (nil)\n");
 return (0);
 }
 a.str = h->str;
@@ -23,7 +22,7 @@ if (a.str == NULL)
 printf("[0] (nil)\n");
 }
 else
-printf("[%d] %s\n",a.len,a.str);
+printf("[%d] %s\n", a.len, a.str);
 num = 1;
 if (a.next != NULL)
 {
