@@ -10,6 +10,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 
 list_t *new;
+int length = 0;
 
 new = malloc(sizeof(list_t));
 if (new == NULL)
@@ -22,26 +23,13 @@ if (new->str == NULL)
 free(new);
 return (NULL);
 }
-new->len = _strlen(str);
+while (str[length] != '\0')
+{
+length++;
+}
+new->len = length;
 new->next = *head;
 *head = new;
 
 return (new);
-}
-
-/**
- * _strlen - function that returns the length of a string.
- * Return: length of string.
- * @s: pointer to sring.
- */
-
-int _strlen(const char *s)
-{
-int length = 0;
-while (*s != '\0')
-{
-length++;
-s++;
-}
-return (length);
 }
