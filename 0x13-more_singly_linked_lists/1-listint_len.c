@@ -15,7 +15,7 @@ return (0);
 num = 1;
 if (h->next != NULL)
 {
-num += list_len(h->next);
+num += listint_len(h->next);
 }
 
 return (num);
