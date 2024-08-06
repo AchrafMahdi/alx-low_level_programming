@@ -16,11 +16,6 @@ return (0);
 a.n = h->n;
 a.next = h->next;
 
-if (a.n == NULL)
-{
-printf("(nil)\n");
-}
-else
 printf("%d\n", a.n);
 num = 1;
 if (a.next != NULL)
