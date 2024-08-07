@@ -36,7 +36,7 @@ for (i = 0; temp != NULL && i < idx - 1; i++)
 temp = temp->next;
 }
 
-if (temp == NULL || temp->next == NULL)
+if (temp == NULL)
 {
 free(new);
 return (NULL);
