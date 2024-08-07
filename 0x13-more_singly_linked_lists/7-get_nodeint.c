@@ -14,10 +14,10 @@ for (i = 0; head != NULL; i++)
 {
 if (i == index)
 {
-return head;
+return (head);
 }
 head = head->next;
 }
 
-return NULL;
+return (NULL);
 }
