@@ -19,7 +19,9 @@ return (-1);
 
 if (index == 0)
 {
-free_listint2(head);
+listint_t *to_delete = *head;
+*head = (*head)->next;
+free(to_delete);
 return (1);
 }
 
