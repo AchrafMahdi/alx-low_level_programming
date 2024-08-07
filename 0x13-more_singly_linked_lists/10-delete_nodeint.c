@@ -23,18 +23,14 @@ free_listint2(head);
 return (1);
 }
 
-for (i = 0; head != NULL; i++)
-{
 temp = *head;
-if (i == index - 1)
+for (i = 0; temp != NULL && i < index - 1; i++)
 {
+temp = temp->next;
+}
+listint_t *to_delete = temp->next;
 temp->next = temp->next->next;
-}
-if (i == index)
-{
-free_listint2(head);
-}
-}
+free(to_delete);
 
 return (1);
 }
