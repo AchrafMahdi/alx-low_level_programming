@@ -22,21 +22,28 @@ if (new == NULL)
 return (NULL);
 }
 
+new->n = n;
 if (idx == 0)
 {
-temp->n = n;
-temp->next = NULL;
+new->next = *head;
+*head = new;
+return (new);
 }
 
-new->n = n;
 
-for (i = 0; head != NULL; i++)
+for (i = 0; temp != NULL && i < idx - 1; i++)
 {
-if (i == idx - 1)
+temp = temp->next;
+}
+
+if (temp == NULL || temp->next == NULL)
 {
+free(new);
+return (NULL);
+}
+
 new->next = temp->next;
-temp->next = &new;
-}
-}
+temp->next = new;
+
 return (new);
 }
