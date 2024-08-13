@@ -1,34 +1,37 @@
 #include "main.h"
 
 /**
-* main - program that copies the content of a file to another file.
-* @argc: num argument
-* @argv: string argument
-* Return: 0
-*/
-
+ * printErr - Prints an error message and exits the program.
+ * @msg: The error message format string.
+ * @file: The name of the file related to the error (for error messages).
+ * @exit_code: The exit code to return upon failure.
+ *
+ * Description: This function uses dprintf to print the error message
+ * Return: nothing.
+ */
 void printErr(const char *msg, const char *file, int exit_code)
 {
 dprintf(STDERR_FILENO, msg, file);
 exit(exit_code);
 }
 
+/**
+* main - program that copies the content of a file to another file.
+* @argc: num argument
+* @argv: string argument
+* Return: 0
+*/
+
 int main(int argc, char *argv[])
 {
-int f_from;
-int f_to;
-ssize_t r_read;
-ssize_t w_written;
+int f_from, f_to;
+ssize_t r_read, w_written;
 char buff[1024];
-
 if (argc != 3)
 printErr("Usage: cp %s %s\n", "", 97);
-
 f_from = open(argv[1], O_RDONLY);
-
 if (f_from == -1)
 printErr("Error: Can't read from file %s\n", argv[1], 98);
-
 f_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 if (f_to == -1)
 {
